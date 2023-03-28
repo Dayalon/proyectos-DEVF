@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(20, 83, 154);
+    text-align: center;
+    padding-top: 10%;
+}
+
+.logo{
+    background-color: rgb(20, 83, 154);
+}
+
+.menu{
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: aliceblue;
+    font-size: 95%;
+    margin-right: 50px;
+    vertical-align: top;
+   
+}
+.perfil{
+    border-radius: 20px;
+    float: right
+}

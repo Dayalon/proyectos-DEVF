@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro-js-24</title>
+    <script>
+        /* operadores logicos siempre devuelven un valor de verdad (true o false) -> boolean
+        and (&&) -> y
+        v-v -> v
+        v-f -> f
+        f-v -> f
+        f-f -> f
+
+        or (||) -> o 
+        v-v -> v
+        v-f -> v
+        f-v -> v
+        f-f -> f
+
+        negacion (!) -> cambiar o invertir el valor de verdad
+        v-v -> !v -> f
+        
+        valor de verdad
+        ===
+        !==
+        <
+        <=
+        >
+        >=
+        */
+        let altura = String(prompt("Ingrese su altura en metros: "));
+        let peso = String(prompt("Ingrese su peso en kilogramos: "));
+
+        let imc = peso / (altura ** 2);
+
+        if (imc < 18.5) {
+            console.log("Su índice de masa corporal es " + imc.toFixed(2) + " y se considera bajo peso.");
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            console.log("Su índice de masa corporal es " + imc.toFixed(2) + " y se considera peso normal.");
+        } else if (imc >= 25 && imc <= 29.9) {
+            console.log("Su índice de masa corporal es " + imc.toFixed(2) + " y se considera sobrepeso.");
+        } else {
+            console.log("Su índice de masa corporal es " + imc.toFixed(2) + " y se considera obesidad.");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
