@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+  <body>
+    <div class="cajero">
+      <h1>Simulación de Cajero Automático</h1>
+      <div class="pantalla">
+        <p>Ingrese su número de cuenta:</p>
+        <input type="text" id="numeroCuenta">
+        <br><br>
+        <button onclick="verificarCuenta()">Ingresar</button>
+      </div>
+      <div id="opciones" class="oculto">
+        <p>Seleccione una opción:</p>
+        <button onclick="verSaldo()">Ver saldo</button>
+        <button onclick="retirar()">Retirar dinero</button>
+        <button onclick="depositar()">Depositar dinero</button>
+        <button onclick="salir()">Salir</button>
+      </div>
+      <div id="saldo" class="oculto">
+        <p>Su saldo actual es de: $<span id="saldoActual"></span></p>
+        <button onclick="regresar()">Regresar</button>
+      </div>
+      <div id="retirar" class="oculto">
+        <p>Ingrese la cantidad que desea retirar:</p>
+        <input type="number" id="cantidadRetirar">
+        <br><br>
+        <button onclick="realizarRetiro()">Retirar</button>
+        <button onclick="regresar()">Regresar</button>
+      </div>
+      <div id="depositar" class="oculto">
+        <p>Ingrese la cantidad que desea depositar:</p>
+        <input type="number" id="cantidadDepositar">
+        <br><br>
+        <button onclick="realizarDeposito()">Depositar</button>
+        <button onclick="regresar()">Regresar</button>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
