@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #36587b 40%, #d9d9d9 60%);
+    margin: 0;
+    padding: 0;
+}
+
+.curriculum {
+    text-align: center;
+    border: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+}
+
+.formacion {
+    flex: 1;
+    padding-right: 200px; /* Espacio entre "formación" e "información profesional" */
+}
+
+.informacion-profesional {
+    flex: 1;
+    padding-left: 20px; /* Espacio entre "formación" e "información profesional" */
+}
+
+/* Estilo de los títulos de cada sección */
+.formacion h2,
+.informacion-profesional h2,
+.informacion-profesional h3,
+.informacion-profesional h4,
+.informacion-profesional h5 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 50px;
+}
+
+/* Estilo de las listas de formación y otros conocimientos */
+.formacion ul,
+.formacion li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la información profesional */
+.informacion-profesional p {
+    margin-bottom: 10px;
+}
+
+/* Estilo del pie de página */
+.pie-de-pagina {
+    background-color: #36587b;
+    text-align: center;
+    padding: 10px;
+}
+
+.caja-de-datos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caja-de-datos li {
+    margin-bottom: 5px;
+    color: white;
+}
